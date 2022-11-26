@@ -1,0 +1,48 @@
+.hero
+  margin-top: 50px
+  &_slider
+    &__img
+      width: 100%
+      height: 100%
+      max-height: 950px
+      // &::after
+      //   content: ''
+      //   background-image: url('../assets/img/bg.png')
+      //   width: 100%
+      //   height: 100%
+      //   display: block
+      // z-index: 99
+.slider
+  position: relative
+  &_wrap
+    position: absolute
+    width: 90%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &_title
+    color: $heroTitle
+    text-transform: uppercase
+    text-align: center
+  &_subtitle
+    color: $heroTitle
+    text-align: center
+    font-size: 30px
+    line-height: 1.2
+  &_item
+    position: relative
+.slick
+  &-track
+    display: flex
+
+  &-list
+    overflow: hidden
+@media screen and ( max-width: 992px )
+  .slider
+    &_wrap
+      width: 90%
+    &_subtitle
+      font-size: 20px
+@media screen and ( max-width: 770px )
+  .hero
+    margin-top: 0

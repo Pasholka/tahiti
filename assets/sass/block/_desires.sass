@@ -1,0 +1,60 @@
+.desires
+  margin-top: 100px
+  &_bg
+    width: 100%
+  &_wrap
+    position: relative
+  &_img
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 70%
+  &_wrapper
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &_title
+    color: $heroTitle
+  &_text
+    color: $heroTitle
+    font-size: 18px
+    line-height: 22px
+    text-align: center
+    padding-top: 40px
+  &_button
+    margin-top: 70px
+  &_link
+    padding: 30px 95px
+    background: $colorGreen
+    color: $heroTitle
+    &:hover
+      background-color: $nav
+@media screen and ( max-width: 1320px )
+  .desires
+    &_wrapper
+      width: 70%
+@media screen and ( max-width: 1140px )
+  .desires
+    &_img
+      width: 80%
+    &_text
+      padding-top: 20px
+    &_button
+      margin-top: 40px
+@media screen and ( max-width: 992px )
+  .desires
+    &_text
+      padding-top: 20px
+@media screen and ( max-width: 770px )
+  .desires
+    &_bg
+      height: 400px
+    &_img
+      height: 90%
+      width: 85%
+@media screen and ( max-width: 500px )
+  .desires
+    &_link
+      padding: 30px 30px

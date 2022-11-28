@@ -327,6 +327,7 @@ h2 {
   line-height: 1.2;
   background: #ffffff;
   box-shadow: 2px 5px 25px 8px rgba(0, 0, 0, 0.06);
+  border-style: none;
 }
 
 .explore_button {
